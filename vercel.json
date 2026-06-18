@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "publics": [
+    {
+      "src": "index.html",
+      "dest": "index.html"
+    }
+  ],
+  "cleanUrls": true
+}
