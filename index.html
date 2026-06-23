@@ -11,6 +11,11 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="duplicate-toast" id="duplicate-toast" role="alert" aria-live="assertive">
+  <span class="duplicate-toast-icon" aria-hidden="true">⚠</span>
+  <span class="duplicate-toast-text" id="duplicate-toast-text"></span>
+  <button type="button" class="duplicate-toast-close" id="duplicate-toast-close" aria-label="Dismiss">&times;</button>
+</div>
 <main class="main-content">
 <div class="site-top">
   <div class="eyebrow">Match-day artwork, made to be reused</div>
@@ -106,6 +111,10 @@
       <h3>Fixtures</h3>
       <div id="fixture-editor"></div>
       <button type="button" class="add-btn" id="add-fixture">+ Add fixture</button>
+      <div class="fixtures-toolbar">
+        <span class="fixtures-save-status" id="fixtures-save-status"></span>
+        <button type="button" class="reset-link" id="reset-fixtures">Reset to default fixtures</button>
+      </div>
     </section>
 
     <section class="panel-section">
