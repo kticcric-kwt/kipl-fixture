@@ -17,8 +17,35 @@
   --font-mono:'Space Mono', monospace;
   --radius:14px;
 }
+
+/* 1. Ensure the layout container forces full-screen tracking */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 2. Set the body to a flex column layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. This tells the main wrapper to push the footer down by taking up all available space */
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* 4. Keep the footer sizing steady */
+.site-footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #0f2a0a; /* Matches your background palette colors */
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
 *{ box-sizing:border-box; }
-html,body{ margin:0; padding:0; }
+/* html,body{ margin:0; padding:0; } */
 body{
   background:linear-gradient(var(--paper-line) 1px, transparent 1px) 0 0/100% 28px, var(--bg-paper);
   color:var(--ink);
