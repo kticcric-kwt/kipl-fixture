@@ -149,7 +149,9 @@ a,button,input{ font-family:inherit; }
 
 .fixtures{ flex:1 1 auto; display:flex; flex-direction:column; gap:9px; margin-top:8px; overflow:hidden; }
 .fixture-row{ background:rgba(0,0,0,.34); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:9px 10px 8px; text-align:center; flex:1 1 0; display:flex; flex-direction:column; justify-content:center; min-height:0; }
-.fixture-teams{ display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap; font-family:var(--font-body); font-weight:800; font-size:clamp(11px,3vw,16px); line-height:1.15; }
+.fixture-teams{ display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:6px; font-family:var(--font-body); font-weight:800; font-size:clamp(11px,3vw,16px); line-height:1.15; }
+.fixture-teams .team-a{ text-align:right; }
+.fixture-teams .team-b{ text-align:left; }
 .fixture-row.alt-a .team-a{ color:var(--lime); }
 .fixture-row.alt-a .team-b{ color:var(--white); }
 .fixture-row.alt-b .team-a{ color:var(--white); }
